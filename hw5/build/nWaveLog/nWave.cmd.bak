@@ -1,0 +1,123 @@
+wvResizeWindow -win $_nWave1 1920 23 1920 1017
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/home/wayen/DIC/hw5/build/top.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testfixture"
+wvGetSignalSetScope -win $_nWave1 "/testfixture/u_sobel"
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_sobel/clk} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_sobel/clk} \
+{/testfixture/u_sobel/reset} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_sobel/clk} \
+{/testfixture/u_sobel/reset} \
+{/testfixture/u_sobel/caddr_wr\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_sobel/clk} \
+{/testfixture/u_sobel/reset} \
+{/testfixture/u_sobel/caddr_wr\[15:0\]} \
+{/testfixture/u_sobel/ans\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_sobel/clk} \
+{/testfixture/u_sobel/reset} \
+{/testfixture/u_sobel/caddr_wr\[15:0\]} \
+{/testfixture/u_sobel/ans\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvGetSignalClose -win $_nWave1
+wvZoom -win $_nWave1 4671547.196901 23806923.214977
+wvZoom -win $_nWave1 8006958.123228 13504209.464767
+wvZoom -win $_nWave1 8266028.070247 10743162.632154
+wvZoom -win $_nWave1 8780965.015975 9649321.418245
+wvZoom -win $_nWave1 8915507.002123 9235604.810836
+wvZoom -win $_nWave1 8962416.106433 9065326.828666
+wvZoom -win $_nWave1 8982347.169487 9022674.353731
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoom -win $_nWave1 10726.145842 19473.682256
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testfixture"
+wvGetSignalSetScope -win $_nWave1 "/testfixture/u_sobel"
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_sobel/clk} \
+{/testfixture/u_sobel/reset} \
+{/testfixture/u_sobel/caddr_wr\[15:0\]} \
+{/testfixture/u_sobel/ans\[7:0\]} \
+{/testfixture/u_sobel/result\[10:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testfixture"
+wvGetSignalSetScope -win $_nWave1 "/testfixture/u_sobel"
+wvGetSignalSetScope -win $_nWave1 "/testfixture/u_sobel"
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_sobel/clk} \
+{/testfixture/u_sobel/reset} \
+{/testfixture/u_sobel/caddr_wr\[15:0\]} \
+{/testfixture/u_sobel/ans\[7:0\]} \
+{/testfixture/u_sobel/result\[10:0\]} \
+{/testfixture/u_sobel/t1\[8:0\]} \
+{/testfixture/u_sobel/t2\[9:0\]} \
+{/testfixture/u_sobel/t3\[8:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 6 7 8 )} 
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 8154.578814 -snap {("G2" 0)}
+wvExit

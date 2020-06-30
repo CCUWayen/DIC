@@ -1,0 +1,214 @@
+Magic 271485
+Revision Verdi_O-2018.09
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 23 1920 1137 202 104
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/wayen/DIC/hw4/build/top.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 0.100000
+cursor 142500.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 81
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/wayen/DIC/hw4/build/top.fsdb"
+addSignal -h 15 /testfixture/rc4/clk
+addSignal -h 15 -holdScope rst
+addSignal -h 15 -holdScope key_valid
+addSignal -h 15 -holdScope key_ready
+addGroup "G2"
+addSignal -h 15 /testfixture/rc4/state[2:0]
+addSignal -h 15 -holdScope nxt_state[2:0]
+addSignal -h 15 -holdScope key_in[7:0]
+addGroup "G3"
+addSignal -h 15 /testfixture/rc4/key[31:0]
+addGroup "G4"
+addSignal -expanded -h 15 /testfixture/rc4/box[63:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[20][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[21][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[22][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[40][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[0][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[23][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[41][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[1][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[24][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[42][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[60][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[2][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[25][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[43][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[61][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[3][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[26][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[44][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[62][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[4][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[27][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[45][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[63][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[5][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[28][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[46][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[6][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[29][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[47][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[7][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[48][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[8][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[49][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[9][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[10][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[11][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[12][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[30][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[13][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[31][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[14][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[32][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[50][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[15][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[33][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[51][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[16][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[34][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[52][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[17][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[35][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[53][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[18][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[36][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[54][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[19][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[37][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[55][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[38][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[56][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[39][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[57][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[58][7:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope box[59][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[63][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[62][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[61][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[60][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[59][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[58][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[57][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[56][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[55][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[54][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[53][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[52][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[51][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[50][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[49][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[48][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[47][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[46][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[45][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[44][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[43][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[42][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[41][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[40][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[39][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[38][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[37][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[36][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[35][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[34][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[33][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[32][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[31][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[30][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[29][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[28][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[27][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[26][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[25][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[24][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[23][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[22][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[21][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[20][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[19][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[18][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[17][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[16][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[15][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[14][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[13][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[12][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[11][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[10][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[9][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[8][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[7][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[6][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[5][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[4][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[3][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[2][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[1][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box[0][7:0]
+addSignal -h 15 -holdScope box_ready
+addGroup "G5"
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/rc4/counter[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box_index[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope box_index_cmp[9:0]
+addGroup "G6"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/wayen/DIC/hw4/build/top.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/testfixture"
+"/testfixture/rc4"
+
+SCOPE_LIST_BEGIN
+"/testfixture"
+"/testfixture/rc4"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
